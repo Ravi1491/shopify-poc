@@ -6,8 +6,8 @@ const querystring = require("querystring");
 const app = express();
 const port = 3000;
 
-const apiKey = "5640b844901d357e02dbcc797826baa5";
-const apiSecret = "527f06d6500fca9f584bcdbdb7138787";
+const apiKey = process.env.API_KEY;
+const apiSecret = process.env.API_SECRET;
 const scopes =
   "read_products,read_orders, read_analytics, read_orders, read_product_feeds, read_product_listings, read_products";
 
